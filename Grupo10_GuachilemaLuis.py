@@ -65,6 +65,12 @@ class ClasePrincipal():
         print("| Presione 4)                                   Salir|")
         print("|----------------------------------------------------|")
         try:
+            '''
+            Pedimos al usuario que ingrese una opción del menú paciente
+            Donde probaremos que el usuario ingrese un número
+            Caso contrario entra el except value error, para detectar que el 
+            usuario ingresó una letra y retornar nuevamente el menú [Pacientes] 
+            '''
             opcionPaciente = int(input("Ingrese una opcion: "))
             if opcionPaciente == 1:
                 print("-----------------------------------------------------")

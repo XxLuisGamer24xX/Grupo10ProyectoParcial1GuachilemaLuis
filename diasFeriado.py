@@ -1,14 +1,9 @@
-#creamos un diccionario con los diás de la semena
-#creamos un diccionario con los meses del año
 import calendar
 from time import strptime
 import holidays
 from  datetime import date
 from datetime import timedelta
-from dateutil.easter import easter
 import datetime
-from holidays.constants import JAN, MAY, AUG, OCT, NOV, DEC
-from holidays.holiday_base import HolidayBase
 from dateutil.relativedelta import relativedelta as rd, FR
 from FeriadosEcuador import *
 from funcionesNecesarias import *
@@ -16,55 +11,89 @@ from funcionesNecesarias import *
 #                 Asignación de fechas  
 #---------------------------------------------------------------
 def comprobarFecha(fechaIngreso):
+    '''
+    Funcion que me permite ingresar una fecha y determinar la fecha ingresada es un día festivo
+    o si está registrandose un fin de semana, y asignarle una fecha nueva al día laboral más cercano
+    para poder así en otra función usar la nueva fecha para poder asignarle un turno  
+    ---------------------
+    Uso de la clase Ecuador , para determinar si el día ingresa consta en las fechas
+    de los feriados Ecuatorianos y feriados de la provincia de Santo Domingo
+    '''
     feriadosEcuador=Ecuador()
+    #Convetir fecha obtenida a un formato dia/mes/año para poder hacer los cálculos entre fechas
     fechaIngresoConvetida=datetime.datetime.strptime(fechaIngreso, "%d/%m/%Y")
     if fechaIngresoConvetida in feriadosEcuador:
-        print("La fecha ingresada es un día festivo")
+        '''
+        Si la fecha ingresada consta en los feriados Ecuatorianos, entonces calculamos
+        si el día pertenece a un fin de semana o no, y asignamos una nueva fecha
+        o si cae un lunes la fecha será la misma, si cae un marte, miercoles, jueves, se le asignará al día siguiente
+        porque si lo aproximamos un día anterior, la persona no podrá asignarle un turno. 
+        '''
+        #============================================#
+        #             Dia festivo
+        #============================================#
         if fechaIngresoConvetida.weekday()==5:
-            print("La fecha ingresada es un sábado")
-            fechaNueva=fechaIngresoConvetida+timedelta(days=-1)            
+            #Para sabados
+            fechaNueva=fechaIngresoConvetida+timedelta(days=2)            
         else:
+            #Para Domingos
             if fechaIngresoConvetida.weekday()==6:
                 print("La fecha ingresada es un domingo")
                 fechaNueva=fechaIngresoConvetida+timedelta(days=1)                
-            else:
-                print("La fecha ingresada es un día de semana xd")
+            else:                
+                #Para lunes
                 if fechaIngresoConvetida.weekday()==0:
-                    print("La fecha ingresada es un lunes")
-                    fechaNueva=fechaIngresoConvetida
+                    fechaNueva=fechaIngresoConvetida+timedelta(days=1)  
                 else:
-                    if fechaIngresoConvetida.weekday()==1:
-                        print("La fecha ingresada es un martes")
-                        fechaNueva=fechaIngresoConvetida+timedelta(days=-1)
+                    #Para martes
+                    if fechaIngresoConvetida.weekday()==1:                    
+                        fechaNueva=fechaIngresoConvetida+timedelta(days=1)
                     else:
-                        if fechaIngresoConvetida.weekday()==2:
-                            print("La fecha ingresada es un miércoles")
-                            fechaNueva=fechaIngresoConvetida+timedelta(days=-2)
+                        #Para miércoles
+                        if fechaIngresoConvetida.weekday()==2:                        
+                            fechaNueva=fechaIngresoConvetida+timedelta(days=1)
                         else:
-                            if fechaIngresoConvetida.weekday()==3:
-                                print("La fecha ingresada es un jueves")
+                            #Para jueves
+                            if fechaIngresoConvetida.weekday()==3:                                
                                 fechaNueva=fechaIngresoConvetida+timedelta(days=1)
                             else:
-                                if fechaIngresoConvetida.weekday()==4:
-                                    print("La fecha ingresada es un viernes")
-                                    fechaNueva=fechaIngresoConvetida
+                                #Para viernes
+                                if fechaIngresoConvetida.weekday()==4:                                    
+                                    fechaNueva=fechaIngresoConvetida+timedelta(days=3)
     else:
+        #============================================#
+        #              Dias Normales
+        #============================================#
         if fechaIngresoConvetida.weekday()==5:
-            print("La fecha ingresada es un sábado")
-            fechaNueva=fechaIngresoConvetida+timedelta(days=-1)            
+            #Para sabados
+            fechaNueva=fechaIngresoConvetida+timedelta(days=2)            
         else:
+            #Para Domingos
             if fechaIngresoConvetida.weekday()==6:
-                print("La fecha ingresada es un domingo")
                 fechaNueva=fechaIngresoConvetida+timedelta(days=1)                
             else:
-                print("La fecha ingresada es un día de semana")
-                
-    print("La nueva fecha asignada es:",fechaNueva)
-#fecha=str(input("Ingrese la fecha:"))
-fecha=fechaActual
-""" print("---------------------------------------------------------------")
-print("              FERIADOS DE ECUADOR")
-print("---------------------------------------------------------------")
-for feriado in Ecuador(years=2022).items():
-    print(feriado) """
+                #Para lunes
+                if fechaIngresoConvetida.weekday()==0:                    
+                    fechaNueva=fechaIngresoConvetida+timedelta(days=0)  
+                else:
+                    #Para martes
+                    if fechaIngresoConvetida.weekday()==1:
+                        fechaNueva=fechaIngresoConvetida+timedelta(days=0)
+                    else:
+                        #Para miércoles
+                        if fechaIngresoConvetida.weekday()==2:
+                            fechaNueva=fechaIngresoConvetida+timedelta(days=0)
+                        else:
+                            #Para jueves
+                            if fechaIngresoConvetida.weekday()==3:                                
+                                fechaNueva=fechaIngresoConvetida+timedelta(days=0)
+                            else:
+                                #Para Viernes
+                                if fechaIngresoConvetida.weekday()==4:                                
+                                    fechaNueva=fechaIngresoConvetida+timedelta(days=0)
+    '''
+    Retornamos solo la fecha nueva, pa que si cumple alguna de las condiciones establecidas
+    la nueva fecha será la que usaremos para asignarle un turno desde otra clase a nuestro cliente
+    '''
+    return fechaNueva            
 

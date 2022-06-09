@@ -3,7 +3,7 @@ class DatosPaciente:
     """ 
     Super clase creada para guardar contener los atributos como nombre, apellido, telefono....que heredaran las subclases
     """
-    def __init__(self, nombrePaciente, apellidoPaciente, edadPaciente, telefonoPaciente, direccionPaciente, emailPaciente, numeroCedulaPaciente):
+    def __init__(self, nombrePaciente, apellidoPaciente, edadPaciente, telefonoPaciente, direccionPaciente, emailPaciente, numeroCedulaPaciente, fechaPaciente):
         self.nombreP = nombrePaciente
         self.apellidoP = apellidoPaciente
         self.edadP = edadPaciente
@@ -11,6 +11,11 @@ class DatosPaciente:
         self.direccionP = direccionPaciente
         self.emailP = emailPaciente
         self.numeroCedulaP = numeroCedulaPaciente
+        self.fechaP = fechaPaciente
+class pacienteGinecologia(DatosPaciente):
+    def perfilPaciente(self, enfermedad):
+        self.enfermedadGinelogogia = enfermedad
+        self.areaGinelogogia = "Ginecología"
 def crearnuevopaciente():
     """
     Funcion para crear un objeto nuevoPaciente
@@ -34,7 +39,10 @@ def crearnuevopaciente():
                         numeroCedula=str(input("Ingrese su numero de cédula:"))
                         validarNumeros=validarNumero(numeroCedula)
                         if validarNumeros==True:
-                            nuevoPaciente=DatosPaciente(nombre, apellido,edad , telefono,direccion , email, numeroCedula)
+                            fecha=fechaActual
+                            perfilGinecologia=str(input("Ingrese su enfermedad:"))
+                            nuevoPaciente=pacienteGinecologia(nombre, apellido,edad , telefono,direccion , email, numeroCedula, fecha)
+                            nuevoPaciente.perfilPaciente(perfilGinecologia)
                             archivo=open('./RegistrosActividad/Actividad.txt',"a", encoding="utf-8")
                             '''
                                 r--->Leer fichero
@@ -47,7 +55,7 @@ def crearnuevopaciente():
                             archivo.write("\n --------------------------------------\n")
                             archivo.write("    Paciente"+"["+fechaActual+"]["+ horaActual+"]\n")
                             archivo.write("--------------------------------------\n")
-                            archivo.write("Nombre:"+nuevoPaciente.nombreP+"\nApellido:"+nuevoPaciente.apellidoP+"\nEdad:"+str(nuevoPaciente.edadP)+"\nTelefono:"+nuevoPaciente.telefonoP+"\nDirección:"+nuevoPaciente.direccionP+"\nCorreo:"+nuevoPaciente.emailP+"\nCédula:"+nuevoPaciente.numeroCedulaP)
+                            archivo.write("Nombre:"+nuevoPaciente.nombreP+"\nApellido:"+nuevoPaciente.apellidoP+"\nEdad:"+str(nuevoPaciente.edadP)+"\nTelefono:"+nuevoPaciente.telefonoP+"\nDirección:"+nuevoPaciente.direccionP+"\nCorreo:"+nuevoPaciente.emailP+"\nCédula:"+nuevoPaciente.numeroCedulaP+"\nFecha:"+nuevoPaciente.fechaP+"\nEnfermedad:"+nuevoPaciente.enfermedadGinelogogia)
                             archivo.close()
                         else:
                             print("|----------------------------------------------------|")

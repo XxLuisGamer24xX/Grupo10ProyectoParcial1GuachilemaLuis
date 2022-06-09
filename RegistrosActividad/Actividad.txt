@@ -18,3 +18,26 @@ Telefono:12
 Dirección:213
 Correo:eduas@gmail.com
 Cédula:12345
+ --------------------------------------
+    Paciente[09/06/2022][03:08:46]
+--------------------------------------
+Nombre:cami
+Apellido:cami
+Edad:12
+Telefono:123
+Dirección:1233
+Correo:eduae@gmail.com
+Cédula:1234
+Fecha:09/06/2022
+ --------------------------------------
+    Paciente[09/06/2022][03:21:19]
+--------------------------------------
+Nombre:luis
+Apellido:guachilema
+Edad:88
+Telefono:0981541
+Dirección:Los bancos Santo
+Correo:eduardo@espe.edu.ec
+Cédula:235012
+Fecha:09/06/2022
+Enfermedad:Dolor de intestinos xd
