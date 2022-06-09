@@ -1,0 +1,2 @@
+# Grupo10ProyectoParcial1GuachilemaLuis
+En este proyecto analizaremos las distintas áreas donde la vida de una persona está en riesgo, por lo tanto los turnos/citas deben ser inmediatas y cómodas para el horario del Doctor y del paciente, para la resolución del sistema, aplicaremos una paradigma de Programación Orientada a Objetos, donde diviremos nuestro problema en diferentes subproblemas y resolver el problema generar de una manera fácil.
