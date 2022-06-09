@@ -8,3 +8,13 @@ Telefono:123
 Dirección:asd
 Correo:eduardoguachilema24@gmail.com
 Cédula:123
+ --------------------------------------
+    Paciente[09/06/2022][02:59:26]
+--------------------------------------
+Nombre:pepe
+Apellido:pepe
+Edad:12
+Telefono:12
+Dirección:213
+Correo:eduas@gmail.com
+Cédula:12345
