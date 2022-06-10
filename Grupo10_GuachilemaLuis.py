@@ -1,5 +1,6 @@
 from asyncio import as_completed
 from clasesNecesarias import *
+from lecturaDoctor import *
 class ClasePrincipal():
     '''
     Clase principal, que tendrá como métodos menúPrincipal y menúPaciente 
@@ -25,9 +26,7 @@ class ClasePrincipal():
             if opcion == 1:
                 ClasePrincipal.menuPaciente()
             elif opcion == 2:
-                print("-----------------------------------------------------")
-                print("|                    DOCTOR                        |")
-                print("-----------------------------------------------------")
+                lecturaRegistroDoctor()
             elif opcion == 3:
                 print("-----------------------------------------------------")
                 print("|            Gracias por su visita                   |")
