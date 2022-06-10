@@ -1,0 +1,13 @@
+--------------------------------------
+    Paciente[10/06/2022][02:45:15]
+--------------------------------------
+Turno:2022-06-10 00:00:00
+Nombre:German
+Apellido:Torres
+Edad:12
+Telefono:1233
+Dirección:santo
+Correo:edasd@espe.edu.ec
+Cédula:7895
+Fecha Registro:10/06/2022
+Enfermedad:gripe
