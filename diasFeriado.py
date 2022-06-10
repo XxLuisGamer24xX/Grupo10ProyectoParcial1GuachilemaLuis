@@ -18,6 +18,8 @@ def comprobarFecha(fechaIngreso):
     ---------------------
     Uso de la clase Ecuador , para determinar si el día ingresa consta en las fechas
     de los feriados Ecuatorianos y feriados de la provincia de Santo Domingo
+        Parametros:
+            fechaIngreso (str): fecha que se desea verificar        
     '''
     feriadosEcuador=Ecuador()
     #Convetir fecha obtenida a un formato dia/mes/año para poder hacer los cálculos entre fechas
@@ -95,5 +97,5 @@ def comprobarFecha(fechaIngreso):
     Retornamos solo la fecha nueva, pa que si cumple alguna de las condiciones establecidas
     la nueva fecha será la que usaremos para asignarle un turno desde otra clase a nuestro cliente
     '''
-    return fechaNueva            
+    return fechaNueva        
 

@@ -104,5 +104,6 @@ class ClasePrincipal():
             print("|---------------------------------------")
             print("| No puede ingresar letras o caracteres |")
             print("|---------------------------------------")
-            ClasePrincipal.menuPaciente()   
+            ClasePrincipal.menuPaciente()
 ClasePrincipal.menuPrincipal()
+

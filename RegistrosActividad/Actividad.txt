@@ -41,3 +41,159 @@ Correo:eduardo@espe.edu.ec
 Cédula:235012
 Fecha:09/06/2022
 Enfermedad:Dolor de intestinos xd
+ --------------------------------------
+    Paciente[10/06/2022][01:14:58]
+--------------------------------------
+Nombre:luis
+Apellido:xd
+Edad:12
+Telefono:123123
+Dirección:asd
+Correo:eduardoguachilema@gmail.com
+Cédula:12
+Fecha:10/06/2022
+Enfermedad:Nose
+ --------------------------------------
+    Paciente[10/06/2022][01:24:33]
+--------------------------------------
+Nombre:Marlon
+Apellido:Nose
+Edad:12
+Telefono:0981421715
+Dirección:los bancos
+Correo:luis@espe.edu.ec
+Cédula:1234
+Fecha:10/06/2022
+Enfermedad:Dolor de huesos
+ --------------------------------------
+    Paciente[10/06/2022][01:30:25]
+--------------------------------------
+Nombre:luis
+Apellido:guachilema
+Edad:19
+Telefono:0981421715
+Dirección:los bancos
+Correo:eduardo@gmail.com
+Cédula:2350126799
+Fecha:10/06/2022
+Enfermedad:Dolor de huevos
+ --------------------------------------
+    Paciente[10/06/2022][01:39:22]
+--------------------------------------
+Nombre:Luis
+Apellido:Eduardo
+Edad:12
+Telefono:098123
+Dirección:asdad
+Correo:eduardoguachilema@gmail.com
+Cédula:3231245
+Fecha:10/06/2022
+Enfermedad:dolores raros
+ --------------------------------------
+    Paciente[10/06/2022][01:42:18]
+--------------------------------------
+Nombre:luis
+Apellido:guachulea
+Edad:123
+Telefono:123
+Dirección:deasd
+Correo:eduardo@gmail.com
+Cédula:123
+Fecha:10/06/2022
+Enfermedad:nose
+ --------------------------------------
+    Paciente[10/06/2022][01:45:41]
+--------------------------------------
+Nombre:Tomas
+Apellido:Morales
+Edad:12
+Telefono:123
+Dirección:nise
+Correo:tomas@gmail.com
+Cédula:09212
+Fecha:10/06/2022
+Enfermedad:ÑOSE
+ --------------------------------------
+    Paciente[10/06/2022][01:58:50]
+--------------------------------------
+Nombre:luis
+Apellido:Sanchez
+Edad:18
+Telefono:123312
+Dirección:los bancos
+Correo:eduardoguachilema@gmail.com
+Cédula:13457
+Fecha:10/06/2022
+Enfermedad:NOSEE
+ --------------------------------------
+    Paciente[10/06/2022][02:05:11]
+--------------------------------------
+Nombre:luis
+Apellido:sanchez
+Edad:123
+Telefono:9999
+Dirección:santo
+Correo:dead@gmail.com
+Cédula:123
+Fecha:10/06/2022
+Enfermedad:12asd
+ --------------------------------------
+    Paciente[10/06/2022][02:10:54]
+--------------------------------------
+Nombre:luis
+Apellido:guachilema
+Edad:23
+Telefono:1233
+Dirección:123123
+Correo:asd@gmail.com
+Cédula:456123
+Fecha:10/06/2022
+Enfermedad:dolor de cabeza
+ --------------------------------------
+    Paciente[10/06/2022][02:30:10]
+--------------------------------------
+Nombre:camila
+Apellido:nole
+Edad:123
+Telefono:123
+Dirección:aasdad
+Correo:eduardo@gmail.com
+Cédula:213
+Fecha:10/06/2022
+Enfermedad:cora
+ --------------------------------------
+    Paciente[10/06/2022][02:36:20]
+--------------------------------------
+Nombre:camila
+Apellido:nole
+Edad:12
+Telefono:123
+Dirección:asdsad@gmail.com
+Correo:asdasd@espe.edu.ec
+Cédula:123
+Fecha:10/06/2022
+Enfermedad:tos
+ --------------------------------------
+    Paciente[10/06/2022][02:43:32]
+--------------------------------------
+Nombre:Andreson
+Apellido:Vinueza
+Edad:12
+Telefono:1233
+Dirección:asdasd
+Correo:deasd@espe.edu.ec
+Cédula:235001267
+Fecha:10/06/2022
+Enfermedad:gripe
+ --------------------------------------
+    Paciente[10/06/2022][02:45:15]
+--------------------------------------
+Nombre:German
+Apellido:Torres
+Edad:12
+Telefono:1233
+Dirección:santo
+Correo:edasd@espe.edu.ec
+Cédula:7895
+Fecha:10/06/2022
+Enfermedad:gripe

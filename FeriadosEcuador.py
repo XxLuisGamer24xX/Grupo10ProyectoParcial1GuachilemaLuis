@@ -13,9 +13,14 @@ class Ecuador(HolidayBase):
         '''
         Fechas populares para Ecuador (Solo Fechas Nacionales), según el calendario nacional de cada año
         Y fechas festivas de cantonización y provincialización de SantoDomingo
-        Obtenidas del citio web:
-        https://www.eluniverso.com/noticias/ecuador/ecuador-calendario-de-feriados-nacionales-y-por-provincias-para-el-ano-2022-nota/
+            Parámetros: 
+                year (int): año para el cual se desea obtener las fechas
+            Retorno:
+                (list): lista de fechas festivas
+            Obtenidas del citio web:
+                https://www.eluniverso.com/noticias/ecuador/ecuador-calendario-de-feriados-nacionales-y-por-provincias-para-el-ano-2022-nota/
         '''
+
         #==========================================
         #              Año nuevo
         #==========================================
