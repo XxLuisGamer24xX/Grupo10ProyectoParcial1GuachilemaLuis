@@ -1,9 +1,10 @@
 from asyncio import as_completed
-from clasesNecesarias import *
+from clasesAreas import *
 from lecturaDoctor import *
 class ClasePrincipal():
     '''
     Clase principal, que tendrá como métodos menúPrincipal y menúPaciente 
+    No contiene ningún atributo
     '''
     def menuPrincipal():
         '''
