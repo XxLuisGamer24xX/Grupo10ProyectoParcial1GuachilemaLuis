@@ -11,3 +11,16 @@ Correo:edasd@espe.edu.ec
 Cédula:7895
 Fecha Registro:10/06/2022
 Enfermedad:gripe
+--------------------------------------
+    Paciente[10/06/2022][10:16:43]
+--------------------------------------
+Turno:2022-06-10 00:00:00
+Nombre:Mayra
+Apellido:Macas
+Edad:27
+Telefono:09874512
+Dirección:Santo Domingo
+Correo:mayra@espe.edu.ec
+Cédula:2350124
+Fecha Registro:10/06/2022
+Enfermedad:Enfermedad1
